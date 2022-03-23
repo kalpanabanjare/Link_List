@@ -27,7 +27,7 @@ namespace LinkList
                 node.next = Head;
                 Head = node;
             }
-        }
+        }       
         internal void Display()
         {
             Node temp = Head;
@@ -47,6 +47,19 @@ namespace LinkList
                     Console.Write("->"); 
                 }
                 temp = temp.next;
+            }
+        }
+        public void AppendNode(Node node)
+        {
+            if (Head == null && Tail == null)
+            {
+                Head = node;
+                Tail = node;
+            }
+            else
+            {
+                Tail.next = node;
+                Tail = node;
             }
         }
         public void DeleteNodeAtFirst()
@@ -77,8 +90,7 @@ namespace LinkList
             Node new_node = new Node(new_data);
             new_node.next = this.Head;
             Head = new_node;
-            Console.WriteLine("New node is added " + new_data);
-        }
-
+            Console.WriteLine("New node is added");
+        }       
     }
 }

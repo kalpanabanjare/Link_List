@@ -19,8 +19,13 @@ namespace LinkList
             linklist.AddNode(node3);
             linklist.AddNode(node4);
             linklist.AddNode(node5);
-
             linklist.Display();
+
+            Node node6 = new Node(20);
+            Console.WriteLine("\nAfter append node:");
+            linklist.AppendNode(node6);
+            linklist.Display();
+                        
             linklist.DeleteNodeAtFirst();
             linklist.Display();
 
@@ -38,7 +43,7 @@ namespace LinkList
             Console.WriteLine("\nEnter a number you want to add: ");
             int new_num = int.Parse(Console.ReadLine());
             linklist.AddSpicificNode(new_num);
-            linklist.Display();
+            linklist.Display();                  
         }
     }
 }
