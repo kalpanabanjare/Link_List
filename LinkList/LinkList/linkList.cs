@@ -72,5 +72,13 @@ namespace LinkList
             }
             return false;
         }
+        public void AddSpicificNode(int new_data)
+        {
+            Node new_node = new Node(new_data);
+            new_node.next = this.Head;
+            Head = new_node;
+            Console.WriteLine("New node is added " + new_data);
+        }
+
     }
 }

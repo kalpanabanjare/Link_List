@@ -35,6 +35,10 @@ namespace LinkList
             {
                 Console.WriteLine("Data not found");
             }
+            Console.WriteLine("\nEnter a number you want to add: ");
+            int new_num = int.Parse(Console.ReadLine());
+            linklist.AddSpicificNode(new_num);
+            linklist.Display();
         }
     }
 }
