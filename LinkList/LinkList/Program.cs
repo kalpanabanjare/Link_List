@@ -23,6 +23,18 @@ namespace LinkList
             linklist.Display();
             linklist.DeleteNodeAtFirst();
             linklist.Display();
+
+            Console.WriteLine("\nEnter number you want to search");
+            int data = int.Parse(Console.ReadLine());
+            bool res = linklist.search(data);
+            if (res == true)
+            {
+                Console.WriteLine("Data found");
+            }
+            else
+            {
+                Console.WriteLine("Data not found");
+            }
         }
     }
 }
