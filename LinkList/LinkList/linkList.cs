@@ -15,25 +15,25 @@ namespace LinkList
             Head = null;
             Tail = null;
         }
-        //public void AddNode(Node node)
-        //{
-        //    if (Head == null && Tail == null)
-        //    {
-        //        Head = node;
-        //        Tail = node;
-        //    }
-        //    else
-        //    {
-        //        node.next = Head;
-        //        Head = node;
-        //    }
-        //}
+        public void AddNode(Node node)
+        {
+            if (Head == null && Tail == null)
+            {
+                Head = node;
+                Tail = node;
+            }
+            else
+            {
+                node.next = Head;
+                Head = node;
+            }
+        }
         internal void Display()
         {
             Node temp = Head;
             if (temp == null)
             {
-                Console.WriteLine("LinkList is empty"); 
+                Console.WriteLine("LinkList is empty");
             }
             else
             {
@@ -49,29 +49,29 @@ namespace LinkList
                 temp = temp.next;
             }
         }
-        //public void DeleteNodeAtFirst()
-        //{
-        //    if (this.Head == null)
-        //    {
-        //        Console.WriteLine("Nothig to delete"); 
-        //    }
-        //    Node temp = this.Head;
-        //    this.Head = this.Head.next;
-        //    Console.WriteLine("\nRemoved first node from LinkList");
-        //}  
+        public void DeleteNodeAtFirst()
+        {
+            if (this.Head == null)
+            {
+                Console.WriteLine("Nothig to delete");
+            }
+            Node temp = this.Head;
+            this.Head = this.Head.next;
+            Console.WriteLine("\nRemoved first node from LinkList");
+        }
 
-        //public bool search(int data)
-        //{
-        //    Node temp = this.Head;
-        //    while (temp != null)
-        //    {
-        //        if (temp.data == data)
-        //        {
-        //            return true;
-        //        }
-        //        temp = temp.next;
-        //    }
-        //    return false;
-        //}
+        public bool search(int data)
+        {
+            Node temp = this.Head;
+            while (temp != null)
+            {
+                if (temp.data == data)
+                {
+                    return true;
+                }
+                temp = temp.next;
+            }
+            return false;
+        }
     }
 }
