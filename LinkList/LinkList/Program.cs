@@ -25,7 +25,12 @@ namespace LinkList
             Console.WriteLine("\nAfter append node:");
             linklist.AppendNode(node6);
             linklist.Display();
-                        
+            
+            Node node0 = new Node(30);
+            Console.WriteLine("\nAdd node to first");
+            linklist.AddNodeatStart(node0);
+            linklist.Display();
+
             linklist.DeleteNodeAtFirst();
             linklist.Display();
 
@@ -40,9 +45,10 @@ namespace LinkList
             {
                 Console.WriteLine("Data not found");
             }
-            Console.WriteLine("\nEnter a number you want to add: ");
-            int new_num = int.Parse(Console.ReadLine());
-            linklist.AddSpicificNode(new_num);
+            Node node7 = new Node(100);
+            Console.WriteLine("\nEnter a number after you want to add: ");
+            int Data = int.Parse(Console.ReadLine());
+            linklist.AddSpicificNode(Data, node7);
             linklist.Display();                  
         }
     }

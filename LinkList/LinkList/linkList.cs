@@ -62,6 +62,19 @@ namespace LinkList
                 Tail = node;
             }
         }
+        public void AddNodeatStart(Node node)
+        {
+            if (Head == null && Tail == null)
+            {
+                Head = node;
+                Tail = node;
+            }
+            else
+            {
+                node.next = Head;
+                Head = node;
+            }
+        }
         public void DeleteNodeAtFirst()
         {
             if (this.Head == null)
@@ -84,13 +97,6 @@ namespace LinkList
                 temp = temp.next;
             }
             return false;
-        }
-        public void AddSpicificNode(int new_data)
-        {
-            Node new_node = new Node(new_data);
-            new_node.next = this.Head;
-            Head = new_node;
-            Console.WriteLine("New node is added");
-        }       
+        }        
     }
 }
