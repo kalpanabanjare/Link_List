@@ -97,6 +97,19 @@ namespace LinkList
                 temp = temp.next;
             }
             return false;
-        }        
+        }
+        public void AddSpicificNode(int data, Node node)
+        {
+            Node temp = Head;
+            while (temp != null)
+            {
+                if (temp.data == data)
+                {
+                    node.next = temp.next;
+                    temp.next = node;
+                }
+                temp = temp.next;
+            }
+        }
     }
 }
