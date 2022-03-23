@@ -22,7 +22,7 @@ namespace LinkList
 
             linklist.Display();
             linklist.DeleteNodeAtFirst();
-            linklist.Display();
+            linklist.Display();            
         }
     }
 }

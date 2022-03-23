@@ -58,6 +58,6 @@ namespace LinkList
             Node temp = this.Head;
             this.Head = this.Head.next;
             Console.WriteLine("\nRemoved first node from LinkList");
-        }
+        }       
     }
 }
