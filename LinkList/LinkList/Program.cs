@@ -21,6 +21,8 @@ namespace LinkList
             linklist.AddNode(node5);
 
             linklist.Display();
+            linklist.DeleteNodeAtFirst();
+            linklist.Display();
         }
     }
 }

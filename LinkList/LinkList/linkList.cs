@@ -49,5 +49,15 @@ namespace LinkList
                 temp = temp.next;
             }
         }
+        public void DeleteNodeAtFirst()
+        {
+            if (this.Head == null)
+            {
+                Console.WriteLine("Nothig to delete"); ;
+            }
+            Node temp = this.Head;
+            this.Head = this.Head.next;
+            Console.WriteLine("\nRemoved first node from LinkList");
+        }
     }
 }
