@@ -14,20 +14,7 @@ namespace LinkList
         {
             Head = null;
             Tail = null;
-        }
-        public void AddNode(Node node)
-        {
-            if (Head == null && Tail == null)
-            {
-                Head = node;
-                Tail = node;
-            }
-            else
-            {
-                node.next = Head;
-                Head = node;
-            }
-        }
+        }       
         internal void Display()
         {
             Node temp = Head;

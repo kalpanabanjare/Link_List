@@ -7,15 +7,7 @@ namespace LinkList
     {
         static void Main()
         {
-            linkList linklist = new linkList();
-            Node node1 = new Node(21);
-            Node node2 = new Node(22);
-            Node node3 = new Node(23);
-
-            linklist.AddNode(node1);
-            linklist.AddNode(node2);
-            linklist.AddNode(node3);
-
+            linkList linklist = new linkList();            
             linklist.Display();
         }
     }
