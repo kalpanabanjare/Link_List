@@ -33,7 +33,7 @@ namespace LinkList
             Node temp = Head;
             if (temp == null)
             {
-                Console.WriteLine("LinkList is empty"); ;
+                Console.WriteLine("LinkList is empty"); 
             }
             else
             {
@@ -44,7 +44,7 @@ namespace LinkList
                 Console.Write(temp.data);
                 if (temp.next != null)
                 {
-                    Console.Write("->"); ;
+                    Console.Write("->"); 
                 }
                 temp = temp.next;
             }
@@ -53,7 +53,7 @@ namespace LinkList
         {
             if (this.Head == null)
             {
-                Console.WriteLine("Nothig to delete"); ;
+                Console.WriteLine("Nothig to delete"); 
             }
             Node temp = this.Head;
             this.Head = this.Head.next;
