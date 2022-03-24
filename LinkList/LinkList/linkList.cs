@@ -129,5 +129,24 @@ namespace LinkList
                 temp = temp.next;
             }
         }
+        public void DeleteSpecific(int Data)
+        {
+            Node temp = Head;
+            while (temp != null)
+            {
+                if (temp.data == Data)
+                {
+                    Head = temp.next;
+                    temp = null;
+                    break;
+                }
+                else if (temp.next.data == Data)
+                {
+                    temp.next = temp.next.next;
+                    break;
+                }
+                temp = temp.next;
+            }
+        }
     }
 }

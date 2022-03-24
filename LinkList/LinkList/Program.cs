@@ -49,10 +49,15 @@ namespace LinkList
                 Console.WriteLine("Data not found");
             }
             Node node_7 = new Node(100);
-            Console.WriteLine("\nEnter a number after you want to add: ");
+            Console.WriteLine("Enter a number after you want to add: ");
             int Data = int.Parse(Console.ReadLine());
             linklist.AddSpicificNode(Data, node_7);
-            linklist.Display();                  
+            linklist.Display();
+
+            Console.WriteLine("\nEnter a node to delete: ");
+            Data = Convert.ToInt32(Console.ReadLine());
+            linklist.DeleteSpecific(Data);
+            linklist.Display();
         }
     }
 }
