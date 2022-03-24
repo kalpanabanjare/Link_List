@@ -85,6 +85,24 @@ namespace LinkList
             this.Head = this.Head.next;
             Console.WriteLine("\nRemoved first node from LinkList");
         }
+        public void DeleteNodeAtLast()
+        {
+            if (Head == null)
+            {
+                Console.WriteLine("Nothing to delete");
+            }
+            else
+            {
+                Node temp = Head;
+                while (temp.next.next != null)
+                {
+                    temp = temp.next;
+                }
+                Tail = temp;
+                Console.WriteLine("\nRemoved last node from linklist", temp.next.data);
+                temp.next = null;
+            }
+        }
         public bool search(int data)
         {
             Node temp = this.Head;

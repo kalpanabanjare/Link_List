@@ -34,6 +34,9 @@ namespace LinkList
             linklist.DeleteNodeAtFirst();
             linklist.Display();
 
+            linklist.DeleteNodeAtLast();
+            linklist.Display();
+
             Console.WriteLine("\nEnter number you want to search");
             int data = int.Parse(Console.ReadLine());
             bool res = linklist.search(data);
