@@ -8,27 +8,27 @@ namespace LinkList
         static void Main()
         {
             linkList linklist = new linkList();
-            Node node1 = new Node(21);
-            Node node2 = new Node(22);
-            Node node3 = new Node(23);
-            Node node4 = new Node(24);
-            Node node5 = new Node(25);
+            Node node_1 = new Node(21);
+            Node node_2 = new Node(22);
+            Node node_3 = new Node(23);
+            Node node_4 = new Node(24);
+            Node node_5 = new Node(25);
 
-            linklist.AddNode(node1);
-            linklist.AddNode(node2);
-            linklist.AddNode(node3);
-            linklist.AddNode(node4);
-            linklist.AddNode(node5);
+            linklist.AddNode(node_1);
+            linklist.AddNode(node_2);
+            linklist.AddNode(node_3);
+            linklist.AddNode(node_4);
+            linklist.AddNode(node_5);
             linklist.Display();
 
-            Node node6 = new Node(20);
+            Node node_6 = new Node(20);
             Console.WriteLine("\nAfter append node:");
-            linklist.AppendNode(node6);
+            linklist.AppendNode(node_6);
             linklist.Display();
             
-            Node node0 = new Node(30);
+            Node node_0 = new Node(30);
             Console.WriteLine("\nAdd node to first");
-            linklist.AddNodeatStart(node0);
+            linklist.AddNodeatStart(node_0);
             linklist.Display();
 
             linklist.DeleteNodeAtFirst();
@@ -48,10 +48,10 @@ namespace LinkList
             {
                 Console.WriteLine("Data not found");
             }
-            Node node7 = new Node(100);
+            Node node_7 = new Node(100);
             Console.WriteLine("\nEnter a number after you want to add: ");
             int Data = int.Parse(Console.ReadLine());
-            linklist.AddSpicificNode(Data, node7);
+            linklist.AddSpicificNode(Data, node_7);
             linklist.Display();                  
         }
     }
